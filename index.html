@@ -2,11 +2,33 @@
 <html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Admin Dashboard</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <!-- Add basic dark mode defaults -->
+    <style>
+      html.dark, body.dark {
+        background-color: hsl(230, 15%, 10%);
+        color: hsl(210, 40%, 98%);
+      }
+
+      input, textarea, select {
+        background-color: hsl(230, 15%, 12%);
+        color: hsl(210, 40%, 98%);
+        border: 1px solid hsl(217, 32%, 17.5%);
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: hsl(215, 20%, 65%);
+        opacity: 1;
+      }
+    </style>
   </head>
-  <body>
+  <body class="dark">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
