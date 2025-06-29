@@ -36,7 +36,7 @@
   }
 
   .dark {
-    --background: 230 15% 10%;
+    --background: 230 15% 10%; /* Deep dark blue/grey */
     --foreground: 210 40% 98%;
 
     --card: 230 15% 12%;
@@ -45,19 +45,20 @@
     --popover: 230 15% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 200 100% 60%;
+    --primary: 200 100% 60%; /* Electric Blue */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 320 100% 55%;
+    --secondary: 320 100% 55%; /* Hot Pink */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 220 9% 46%;
+    --accent: 220 9% 46%; /* Cool Mid Gray */
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 100% 50%;
+
+    --destructive: 0 100% 50%; /* Vivid Red */
     --destructive-foreground: 0 0% 100%;
 
     --border: 217.2 32.6% 17.5%;
@@ -65,38 +66,14 @@
     --ring: 200 100% 70%;
   }
 
-  /* Apply color to all basic text and form elements */
-  p, h1, h2, h3, h4, h5, h6, span, label, div,
-  input, textarea, select, button {
-    color: hsl(var(--foreground));
+  * {
+    @apply border-[hsl(var(--border))];
   }
 
-  /* Body + all layout background */
   body {
-    @apply bg-[hsl(var(--background))];
+    @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))];
   }
 
-  /* Form fields + placeholders */
-  input, textarea, select {
-    background-color: hsl(var(--card));
-    border: 1px solid hsl(var(--border));
-    color: hsl(var(--foreground));
-  }
-
-  input::placeholder,
-  textarea::placeholder {
-    color: hsl(var(--muted-foreground));
-    opacity: 1;
-  }
-
-  /* Chrome autofill fix */
-  input:-webkit-autofill,
-  textarea:-webkit-autofill {
-    box-shadow: 0 0 0px 1000px hsl(var(--card)) inset;
-    -webkit-text-fill-color: hsl(var(--foreground));
-  }
-
-  /* Buttons */
   button {
     @apply bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] px-4 py-2 rounded;
   }
@@ -104,9 +81,6 @@
   button:hover {
     @apply brightness-110;
   }
-
-  /* Borders */
-  * {
-    border-color: hsl(var(--border));
-  }
 }
+
+
