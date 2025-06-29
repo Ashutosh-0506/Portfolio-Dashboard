@@ -84,8 +84,18 @@
 }
 
 @layer base {
-  p, h1, h2, h3, h4, h5, h6, span, label, div {
+  p, h1, h2, h3, h4, h5, h6, span, label, div,
+  input, textarea, select, button {
     color: hsl(var(--foreground));
   }
-}
 
+  input, textarea, select {
+    background-color: hsl(var(--card));      /* optional, cleaner background */
+    border-color: hsl(var(--border));        /* use your border variable */
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: hsl(var(--muted-foreground));     /* make placeholder visible */
+  }
+}
