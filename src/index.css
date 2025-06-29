@@ -54,8 +54,9 @@
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 45 100% 51%; /* Bright Yellow */
-    --accent-foreground: 0 0% 10%;
+    --accent: 220 9% 46%; /* Cool Mid Gray */
+    --accent-foreground: 0 0% 100%;
+
 
     --destructive: 0 100% 50%; /* Vivid Red */
     --destructive-foreground: 0 0% 100%;
