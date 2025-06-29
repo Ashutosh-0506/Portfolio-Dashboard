@@ -219,7 +219,7 @@ const AddProject = () => {
                     <div className="text-center">
                       {projectBannerPreview ? (
                         <img
-                          className="mx-auto h-[250px] w-full text-gray-300"
+                          className="mx-auto h-[250px] w-full text-muted-foreground"
                           viewBox="0 0 24 24"
                           src={
                             projectBannerPreview && `${projectBannerPreview}`
@@ -227,7 +227,7 @@ const AddProject = () => {
                         />
                       ) : (
                         <svg
-                          className="mx-auto h-12 w-12 text-gray-300"
+                          className="mx-auto h-12 w-12 text-muted-foreground"
                           viewBox="0 0 24 24"
                           fill="currentColor"
                           aria-hidden="true"

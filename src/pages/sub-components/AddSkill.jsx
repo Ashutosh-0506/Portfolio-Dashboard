@@ -104,13 +104,13 @@ const AddSkill = () => {
                     <div className="text-center">
                       {svgPreview ? (
                         <img
-                          className="mx-auto h-12 w-12 text-gray-300"
+                          className="mx-auto h-12 w-12 text-muted-foreground"
                           viewBox="0 0 24 24"
                           src={svgPreview ? `${svgPreview}` : "/docHolder.jpg"}
                         />
                       ) : (
                         <svg
-                          className="mx-auto h-12 w-12 text-gray-300"
+                          className="mx-auto h-12 w-12 text-muted-foreground"
                           viewBox="0 0 24 24"
                           fill="currentColor"
                           aria-hidden="true"
