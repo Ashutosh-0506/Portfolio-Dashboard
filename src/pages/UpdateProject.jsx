@@ -113,7 +113,7 @@ const UpdateProject = () => {
           <div className="space-y-12">
             <div className="border-b border-gray-900/10 pb-12">
               <div className="flex flex-col gap-2 items-start justify-between sm:items-center sm:flex-row">
-                <h2 className="font-semibold leading-7 text-gray-900 text-3xl">
+                <h2 className="font-semibold leading-7 text-foreground text-3xl">
                   UPDATE PROJECT
                 </h2>
                 <Button onClick={handleReturnToDashboard}>
@@ -140,14 +140,14 @@ const UpdateProject = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Project Title
                   </label>
                   <div className="mt-2">
                     <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
                       <input
                         type="text"
-                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-foreground placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                         placeholder="MERN STACK PORTFOLIO"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
@@ -156,7 +156,7 @@ const UpdateProject = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Description
                   </label>
                   <div className="mt-2">
@@ -170,7 +170,7 @@ const UpdateProject = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Technologies Uses In This Project
                   </label>
                   <div className="mt-2">
@@ -184,7 +184,7 @@ const UpdateProject = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Stack
                   </label>
                   <div className="mt-2">
@@ -210,7 +210,7 @@ const UpdateProject = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Deployed
                   </label>
                   <div className="mt-2">
@@ -234,14 +234,14 @@ const UpdateProject = () => {
                 </div>
 
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Github Repository Link
                   </label>
                   <div className="mt-2">
                     <div className="relative flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 ">
                       <input
                         type="text"
-                        className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-foreground placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                         placeholder="Github Repository Link"
                         value={gitRepoLink}
                         onChange={(e) => setGitRepoLink(e.target.value)}
@@ -251,14 +251,14 @@ const UpdateProject = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Project Link
                   </label>
                   <div className="mt-2">
                     <div className="relative flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 ">
                       <input
                         type="text"
-                        className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-8 text-foreground placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                         placeholder="Github Repository Link"
                         value={projectLink}
                         onChange={(e) => setProjectLink(e.target.value)}

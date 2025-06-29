@@ -52,19 +52,19 @@ const AddTimeline = () => {
         >
           <div className="space-y-12">
             <div className="border-b border-gray-900/10 pb-12">
-              <h2 className="font-semibold leading-7 text-gray-900 text-3xl text-center">
+              <h2 className="font-semibold leading-7 text-foreground text-3xl text-center">
                 ADD A NEW TIMELINE
               </h2>
               <div className="mt-10 flex flex-col gap-5">
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Title
                   </label>
                   <div className="mt-2">
                     <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
                       <input
                         type="text"
-                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-foreground placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                         placeholder="Matriculation"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
@@ -73,13 +73,13 @@ const AddTimeline = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Description
                   </label>
                   <div className="mt-2">
                     <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
                       <Textarea
-                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-foreground placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                         placeholder="Description"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
@@ -88,14 +88,14 @@ const AddTimeline = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Starting Point (From)
                   </label>
                   <div className="mt-2">
                     <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
                       <Input
                         type="number"
-                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-foreground placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                         placeholder="From"
                         value={from}
                         onChange={(e) => setFrom(e.target.value)}
@@ -104,14 +104,14 @@ const AddTimeline = () => {
                   </div>
                 </div>
                 <div className="w-full sm:col-span-4">
-                  <label className="block text-sm font-medium leading-6 text-gray-900">
+                  <label className="block text-sm font-medium leading-6 text-foreground">
                     Ending Point (To)
                   </label>
                   <div className="mt-2">
                     <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600">
                       <input
                         type="number"
-                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-foreground placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                         placeholder="To"
                         value={to}
                         onChange={(e) => setTo(e.target.value)}
