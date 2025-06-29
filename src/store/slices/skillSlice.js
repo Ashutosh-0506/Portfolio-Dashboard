@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
+axios.defaults.withCredentials = true;
 const skillSlice = createSlice({
   name: "skill",
   initialState: {
