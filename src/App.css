@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Custom Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -13,17 +15,22 @@
   background: linear-gradient(#642bff, #ff22e6);
   border-radius: 7px;
 }
+
+/* Avatar Upload Button Styling */
 .avatar-update-btn::file-selector-button {
   width: 100%;
   padding: 7px;
   font-weight: 600;
   border-radius: 8px;
-  border: 1px solid hsl(222.2 47.4% 11.2%);
-  background: hsl(222.2 47.4% 11.2%);
+  border: 1px solid hsl(var(--primary));
+  background: hsl(var(--primary));
   cursor: pointer;
-  color: #fff;
+  color: hsl(var(--primary-foreground));
+  transition: all 0.3s ease;
 }
+
 .avatar-update-btn::file-selector-button:hover {
   background: transparent;
-  color: hsl(222.2 47.4% 11.2%);
+  color: hsl(var(--primary));
+  border-color: hsl(var(--primary));
 }
