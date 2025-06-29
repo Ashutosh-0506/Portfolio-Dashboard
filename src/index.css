@@ -82,3 +82,10 @@
     @apply brightness-110;
   }
 }
+
+@layer base {
+  p, h1, h2, h3, h4, h5, h6, span, label, div {
+    color: hsl(var(--foreground));
+  }
+}
+
